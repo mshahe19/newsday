@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    float:right;
+}
+
+    .navbar::before {
+        content: "";
+        background-color: rgb(0, 0, 0);
+        position: absolute;
+        height: 63px;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        z-index: -1;
+    }
+
+    .navbar img {
+        height: 60px;
+        float:right;
+    }
+    .navbar ul {
+        display: flex;
+        list-style: none;
+        margin: 0px 20px;
+    }
+
+        .navbar ul li {
+            padding: 12px;
+        }
+
+            .navbar ul li a {
+                text-decoration: none;
+                color: white;
+                padding: 3px 12px;
+            }
+
+                .navbar ul li a:hover {
+                    color: white;
+                    background-color: rgb(75, 75, 75);
+                    border-radius: 14px;
+                }
+.text-box {
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+    
+}
+    .text-box p {
+        margin: 10px 0 40px;
+        font-size: 14px;
+        color: #000000;
+    }
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #000000;
+    border: 1px solid #000000;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+     box-shadow: 0 0 20px 0px rgba(0,0,0,1);
+    
+    
+}
+form div {
+    padding: 6px;
+}
+
+div input {
+    font-family: 'Cabin', sans-serif;
+}
+
+.heading {
+    margin-top: 75px;
+    font-size: 2.0rem;
+    color: black;
+    display: flex;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5rem;
+    align-items: center;
+    justify-content: center;
+}
+.subHeading {
+    margin-top: 75px;
+    font-size: 2.0rem;
+    color: black;
+    display: flex;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5rem;
+}
+.about{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.info{
+    flex-basis: 44%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h2 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5rem;
+}
+.info:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+.breaking{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+	padding-top: 50px;}
+
+/* (A) STANDARD ROW HEIGHT */
+.vwrap, .vitem {
+    height: 50px;
+    line-height: 30px;
+}
+
+/* (B) FIXED WRAPPER */
+.vwrap {
+    overflow: hidden; /* HIDE SCROLL BAR */
+    background: #eee;
+}
+/* (C) TICKER ITEMS */
+.vitem {
+    text-align: center;
+}
+
+/* (D) ANIMATION - MOVE ITEMS FROM TOP TO BOTTOM */
+/* CHANGE KEYFRAMES IF YOU ADD/REMOVE ITEMS */
+.vmove {
+    position: relative;
+}
+
+@keyframes tickerv {
+    0% {
+        bottom: 0;
+    }
+    /* FIRST ITEM */
+    30% {
+        bottom: 60px;
+    }
+    /* SECOND ITEM */
+    60% {
+        bottom: 120px;
+    }
+    /* THIRD ITEM */
+    90% {
+        bottom: 180px;
+    }
+    /* FORTH ITEM */
+    100% {
+        bottom: 0;
+    }
+    /* BACK TO FIRST */
+}
+
+.vmove {
+    animation-name: tickerv;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(1, 0, .5, 0);
+}
+
+    .vmove:hover {
+        animation-play-state: paused;
+    }
+
+    .vmove:hover {
+        animation-play-state: paused;
+    }
+
+.stories {
+    padding-left: 100px;
+    padding-top: 100px;
+}
+form.form-example {
+    display: table;
+}
+
+div.form-example {
+    display: table-row;
+}
+
+label, input {
+    display: table-cell;
+    margin-bottom: 10px;
+}
+
+label {
+    padding-right: 10px;
+}
+.article {
+    margin-top: 75px;
+    font-size: 0.8 rem;
+    color: black;
+    display: flex;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.0rem;
+}
